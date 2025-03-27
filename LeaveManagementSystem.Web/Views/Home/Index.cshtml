@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewData["h1"] = "Vanakam";
+    ViewData["p1"] = "ASP Net Tutorial ku varaverkirom";
+    ViewData["p2"] = "<a href='https://learn.microsoft.com/aspnet/core'> Intha Link in ull selavum</a>";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["h1"]</h1>
+    <p> @ViewData["p1"] @Html.Raw(ViewData["p2"])</p>
+</div>

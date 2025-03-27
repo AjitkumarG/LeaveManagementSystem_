@@ -1,0 +1,16 @@
+﻿@model TestViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>This is for Test Controller</h1>
+<h2> My name is @Model.Name</h2>
+
+@if (Model.Dob.HasValue)
+{
+    <h3>My Date of Birth is @Model.Dob.Value.ToString("dd/MM/yyyy")</h3>
+}
